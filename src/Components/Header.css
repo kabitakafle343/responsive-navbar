@@ -1,0 +1,73 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+ justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height:10vh;
+  margin: 2rem;
+    background-color:#fff;
+    position: sticky;
+ padding: 0rem 4rem 0rem 4rem;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+
+}
+ .ul{
+    display: flex;
+    flex-direction: row;
+  
+    
+}
+.ul li  {
+
+    list-style:none;
+    padding: 0 3rem;
+    font-size: 1.5rem;
+}
+.ul li a{
+    text-decoration: none;
+}
+
+.navbar .ico{
+display:none ;
+ }
+
+@media screen and (max-width:900px){
+
+.navbar{
+    width: 100%;
+    z-index: 9;
+    margin: 0;
+}
+  
+    .ulonclick{
+        position:absolute;
+        top:10vh;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height:100vh;
+  text-align: center;
+      transition: all 5sec ease-in-out;
+       background-color: darkgray;
+        padding: 4rem 0 0 0;
+    }
+    .ulonclick li{
+list-style: none;
+padding: 2.3rem 0rem;
+font-size: xx-large
+;
+    }
+.ul{
+    display: none;
+}
+ 
+
+   .navbar .ico{
+       display: inline;
+    }
+}
